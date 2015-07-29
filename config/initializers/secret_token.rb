@@ -1,0 +1,3 @@
+Commerce::Application.config.secret_key_base = '99eb7ddf1907897a6670e63a9a3b75f23bf97cc483ed642921be9302566b58ecef5d6d636584e05baf895fcc61519cf21731aa2a3859998b1d24de6c63626ae4
+
+'
