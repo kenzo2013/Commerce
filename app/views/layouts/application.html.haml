@@ -1,12 +1,38 @@
 !!!
+/ START:head
 %html
   %head
-    %title Commerce
+    / START_HIGHLIGHT
+    %title Pragprog Books Online Store
+    / END_HIGHLIGHT
+    / <label id="code.slt"/>
     = stylesheet_link_tag    "application", media: "all", |
       "data-turbolinks-track" => true                     |
     = javascript_include_tag "application", "data-turbolinks-track" => true
+    / <label id="code.jlt"/>
     = csrf_meta_tags
-  / START_HIGHLIGHT
+    / <label id="code.csrf"/>
+  / END:head
   %body{:class => controller.controller_name}
+    / START_HIGHLIGHT
+    #banner
+      = image_tag("logo.png")
+      = @page_title || "Pragmatic Bookshelf"
+      / <label id="code.depot.e.title"/>
+    #columns
+      #side
+        %ul
+          %li
+            %a{:href => "http://www...."} Home
+          %li
+            %a{:href => "http://www..../faq"} Questions
+          %li
+            %a{:href => "http://www..../news"} News
+          %li
+            %a{:href => "http://www..../contact"} Contact
+      #main
+        / END_HIGHLIGHT
+        = yield
+        / <label id="code.depot.e.include"/>
+        / START_HIGHLIGHT
     / END_HIGHLIGHT
-    = yield
