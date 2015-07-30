@@ -51,3 +51,15 @@ Product.create!(title: 'Rails Test Prescriptions',
       </p>},
   image_url: 'rtp.jpg',
   price: 34.95)
+  
+  # . . .
+
+Product.create!(title: 'JavaScript and JQuery: Interactive Front-End Web Development',
+  description: 
+    %{<p>
+        <em>JavaScript and JQuery: Interactive Front-End Web Development</em> This full-color book will show you how to make your websites more interactive and your interfaces more interesting and intuitive..
+      </p>},
+  image_url: 'rtp.jpg',
+  price: 23.66)
+  
+  

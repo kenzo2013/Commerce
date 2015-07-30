@@ -1,15 +1,17 @@
 Commerce::Application.routes.draw do
+  mount Browserlog::Engine => '/logs'
   resources :line_items
 
   resources :carts
 
   resources :products
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'store#index'
+  root 'store#index', as: :store
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
