@@ -16,7 +16,7 @@
   %body{:class => controller.controller_name}
     / START_HIGHLIGHT
     #banner
-      = image_tag("logo.png")
+      = link_to image_tag("logo.png"), store_path
       = @page_title || "Pragmatic Bookshelf"
       / <label id="code.depot.e.title"/>
     #columns
@@ -26,7 +26,7 @@
             = render @cart
         %ul
           %li
-            %a{:href => "http://www...."} Home
+            = link_to 'Home', store_path
           %li
             %a{:href => "http://www..../faq"} Questions
           %li
