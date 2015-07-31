@@ -1,7 +1,6 @@
 %tr
-  / END_HIGHLIGHT
-%td
-  = line_item.quantity
-  \×
-%td= line_item.product.title
-%td.item_price= number_to_currency(line_item.total_price)
+  %td
+    = line_item.quantity
+    \×
+  %td= line_item.product.title
+  %td.item_price= number_to_currency(line_item.total_price)

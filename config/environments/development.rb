@@ -34,4 +34,16 @@ Commerce::Application.configure do
 
   # Raises error for missing translations
   # config.action_view.raimissing_translations = true
+  
+  #Pour envoie des mails
+  config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      address:        "smtp.gmail.com",
+       port:           587, 
+       domain:         "domain.of.sender.net",
+       authentication: "plain",
+       user_name:      "kkenzo2007@gmail.com",
+       password:       "noumedem",
+      enable_starttls_auto: true
+    } 
 end
