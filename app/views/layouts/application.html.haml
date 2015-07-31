@@ -21,6 +21,9 @@
       / <label id="code.depot.e.title"/>
     #columns
       #side
+        #cart
+          = hidden_div_if(@cart.line_items.empty?, id: 'cart') do
+            = render @cart
         %ul
           %li
             %a{:href => "http://www...."} Home
