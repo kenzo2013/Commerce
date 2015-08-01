@@ -16,8 +16,12 @@
   %body{:class => controller.controller_name}
     / START_HIGHLIGHT
     #banner
+      = form_tag store_path, class: 'locale' do
+        = select_tag 'set_locale', options_for_select(LANGUAGES, I18n.locale.to_s), onchange: 'this.form.submit()'                   |
+        = submit_tag 'submit'
+        = javascript_tag "$('.locale input').hide()"
       = link_to image_tag("logo.png"), store_path
-      = @page_title || "Pragmatic Bookshelf"
+      = @page_title || t('.title')
       / <label id="code.depot.e.title"/>
     #columns
       #side
@@ -27,13 +31,13 @@
             = render @cart
         %ul
           %li
-            = link_to 'Home', store_path
+            = link_to t('.home'), store_path
           %li
-            %a{:href => "http://www..../faq"} Questions
+            = link_to t('.questions'), store_path
           %li
-            %a{:href => "http://www..../news"} News
+            = link_to t('.news'), store_path
           %li
-            %a{:href => "http://www..../contact"} Contact
+            = link_to t('.contact'), store_path
           / START_HIGHLIGHT
           - if session[:user_id]
             %ul

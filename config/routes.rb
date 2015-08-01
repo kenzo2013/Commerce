@@ -22,7 +22,13 @@ get 'admin' => 'admin#index'
   # first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   # You can have the root of your site routed with "root"
-  root 'store#index', as: 'store'
+  scope '(:locale)' do
+    resources :orders 
+    resources :line_items
+    resources :carts
+    root 'store#index', as: 'store', via: :all
+  end
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

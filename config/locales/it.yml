@@ -1,0 +1,35 @@
+it:
+  layouts:
+    application:
+      title:       "Biblioteca Pragmatica"
+      home:        "Home"
+      questions:   "Domande"
+      news:        "Notizie"
+      contact:     "Contatto"
+  store:
+    index:
+      title:  "Il vostro catalogo pragmatico"
+      add:    "Aggiungi al carrello"
+  carts:
+    cart:
+      title:       "Il suo Carello"
+      empty:       "Vuotare"
+      checkout:    "Comprare"
+      are_you_sure: "Sicuro? "
+  orders:
+    new:
+      legend:       "Per favore, inserire i suoi dati"
+    form:
+      name:         "Nome"
+      address_html: "Indirizzo"
+      email:        "E-mail"
+      pay_type:     "Comprare con"
+      pay_prompt_html: "Selezionare il modo di pagamento"
+      submit:       "Ordinare"
+  errors:
+    template:
+      body:        "Ci sono i problemi con i campi seguenti:"
+      header:       
+        one:       "1 errore impedisce questo  %{model} di essere salvato"
+        other:     "%{count} errori impediscono questo  %{model} di essere salvato"
+  thanks: "Grazie per l'ordine"

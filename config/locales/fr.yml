@@ -1,0 +1,44 @@
+fr:
+  activerecord:
+    models:
+     order: "Commande"
+     name:         "Nom"
+     address_html: "Adresse"
+     email:        "E-mail"
+     pay_type:     "Acheter avec"
+  attributes:
+     order: 
+  layouts:
+    application:
+      title:       "Bibliothèque pragmatique"
+      home:        "Home"
+      questions:   "Questions"
+      news:        "Nouvelles"
+      contact:     "Contact"
+  store:
+    index:
+      title:  "Votre catalogue Pragmatique"
+      add:    "Ajouter au panier"
+  carts:
+    cart:
+      title:       "Votre Panier"
+      empty:       "Vider le panier"
+      checkout:    "Acheter"
+      are_you_sure: "Vous etes sur? "
+  orders:
+    new:
+      legend:       "Veillez entrer vos coordonnées"
+    form:
+      name:         "Nom"
+      address_html: "Adresse"
+      email:        "E-mail"
+      pay_type:     "Acheter avec"
+      pay_prompt_html: "Selectionnez le mode de payement"
+      submit:       "Passer la commande"
+  errors:
+    template:
+      body:        "Il y a des problèmes avec les champs suivants:"
+      header:       
+        one:       "1 erreur empeche ce  %{model} d'etre sauvegarder"
+        other:     "%{count} erreurs empechent ce %{model} d'etre sauvegarder"
+  thanks: "Merci pour votre commande"
