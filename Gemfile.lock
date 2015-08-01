@@ -26,6 +26,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    bcrypt-ruby (3.0.1)
     browserlog (0.0.2)
       jquery-rails (~> 3)
       rails (>= 3.2.18)
@@ -131,6 +132,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt-ruby (~> 3.0.0)
   browserlog
   byebug
   coffee-rails (~> 4.0.0)

@@ -22,6 +22,7 @@
     #columns
       #side
         #cart
+        - if @cart
           = hidden_div_if(@cart.line_items.empty?, id: 'cart') do
             = render @cart
         %ul
@@ -33,6 +34,14 @@
             %a{:href => "http://www..../news"} News
           %li
             %a{:href => "http://www..../contact"} Contact
+          / START_HIGHLIGHT
+          - if session[:user_id]
+            %ul
+              %li= link_to 'Orders',   orders_path
+              %li= link_to 'Products', products_path
+              %li= link_to 'Users',    users_path
+            = button_to 'Logout', logout_path, method: :delete
+          / END_HIGHLIGHT
       #main
         / END_HIGHLIGHT
         = yield
