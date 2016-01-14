@@ -31,6 +31,12 @@ gem 'spring',        group: :development
 #gem 'bcrypt', '~> 3.1.7'
 gem 'bcrypt-ruby', '~> 3.0.0'
 
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+end
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
