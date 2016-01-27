@@ -23,3 +23,12 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: commerce_production
+  pool: 5
+  username: root
+  password: eric
+  host: localhost
