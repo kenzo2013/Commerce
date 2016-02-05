@@ -51,6 +51,7 @@ gem "erb2haml", :group => :development
 gem 'browserlog'
 gem 'byebug'
 gem 'rvm-capistrano', :group => :development
+gem 'phonegap-rails'
 
 
 

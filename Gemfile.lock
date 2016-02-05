@@ -100,6 +100,7 @@ GEM
       net-ssh (>= 2.6.5)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    phonegap-rails (0.0.12)
     polyglot (0.3.5)
     rack (1.5.5)
     rack-contrib (1.4.0)
@@ -177,6 +178,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   meta_request
+  phonegap-rails
   rails (= 4.0.0)
   rvm-capistrano
   sass-rails (~> 4.0.3)
